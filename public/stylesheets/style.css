@@ -1,8 +1,100 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: #7BB1BC;
 }
 
 a {
   color: #00B7FF;
+}
+
+.centrar{
+  text-align:center; 
+  padding:8px;
+}
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+  background: #ABB5B7;
+}
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+  padding: 2px 16px;
+}
+
+.flex-container {
+  display: flex;
+}
+
+input[type=button], input[type=submit], input[type=reset] {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.input[type=button], input[type=submit], input[type=reset]:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+   
+  input[type="file"] {
+  height: 10em;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  z-index: 3;
+  }
+
+.invoiceBox label {
+	display: block;
+}
+.boxFile {
+	display: inline-block;
+  width: 100%;
+  border: 1px solid grey;
+  background: #fff;
+  color: grey;
+  padding: 10px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 14px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.boxFile:hover {
+	cursor: pointer;
+	background: grey;
+	color: #fff;
+}
+.boxFile i {
+	display: block;
+	font-size: 26px;
+	margin-bottom: 5px;
+}
+.attached,
+.attached:hover,
+.attached:focus {
+	background: green;
+  color: #fff;
+  border: 1px solid green;
+}
+
+.tab{
+  border: 1px solid black;
+}
+
+.bg{
+  background: #7BB1BC;
 }

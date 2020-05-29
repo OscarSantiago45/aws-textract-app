@@ -1,0 +1,18 @@
+extends layout
+
+block content
+
+  form(action="/", method="get") 
+    input(type="submit", value="Home")
+
+  ul.now
+    each nombre in newdata
+        br
+        br
+        br
+        .card
+            each nombre1, valor1 in nombre
+                table.tab
+                    tr
+                        td= nombre1
+                        tr= valor1+": "

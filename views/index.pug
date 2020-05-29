@@ -1,12 +1,19 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
-  form(action="fileupload", method="post", enctype="multipart/form-data") 
-    input(type="file", name="filetoupload")
-    input(type="submit", value="Upload File")
+  h1.centrar= title
+    div.card.centrar
+      div.container.centrar
+        p.centrar Bienvenido #{title}
+        form(action="fileupload", method="post", enctype="multipart/form-data") 
+          div.invoiceBox
+            label
+              div.boxFile seleccionar archivo
+              input(type="file", name="filetoupload")
+          input(type="submit", value="Upload File")
+        form(action="/archivos", method="get", enctype="multipart/form-data") 
+          div.invoiceBox
+          input(type="submit", value="Ver Archivos")
 
-  ul
-  each val,val2 in data
-    li= val2
+        ul
+  
