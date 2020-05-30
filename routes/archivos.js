@@ -6,7 +6,7 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/',  function(req, res, next) {
-
+    //push prueba
     var docClient = new AWS.DynamoDB.DocumentClient();
     
         const params = {
