@@ -6,7 +6,7 @@
     "start": "nodemon ./bin/www"
   },
   "dependencies": {
-    "aws-sdk": "^2.686.0",
+    "aws-sdk": "^2.814.0",
     "aws-textract-helper": "^1.0.0-beta.5",
     "cookie-parser": "^1.4.5",
     "debug": "^2.6.9",
